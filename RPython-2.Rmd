@@ -13,12 +13,12 @@ touch
 4. K Fold Cross Validation
 
 in both R and Python. As in my initial post the algorithms are based on the following
-courses. You can download this R Markdown file along with the data from Github at
+courses. You can download this R Markdown file along with the data from [Github](https://github.com/tvganesh/MachineLearning-RandPython-Part2). I hope these posts can be used as a quick reference in R and Python and Machine Learning.
 
 1. [Statistical Learning](https://lagunita.stanford.edu/courses/HumanitiesandScience/StatLearning/Winter2015/about), Prof Trevor Hastie & Prof Robert Tibesherani, Online Stanford
 2. [Applied Machine Learning in Python](https://www.coursera.org/learn/python-machine-learning) Prof Kevyn-Collin Thomson, University Of Michigan, Coursera
 
-I try to inlcude the coolest part of either course in this post.
+I have tried to inlcude the coolest part of either course in this post.
 
 The following classification problem is based on Logistic Regression. The data is an included
 data set in  Scikit-Learn, which I have saved as csv and use it also for R. The fit of a classification Machine Learning Model depends on how correctly classifies the data. There are several measures of testing a model's classification performance. They are
@@ -205,7 +205,7 @@ adult <- df1 %>% dplyr::select(age,occupation,education,educationNum,capitalGain
 # Set dummy variables
 adult1 <- dummy.data.frame(adult, sep = ".")
 
-Split train and test as required by KNN classsification model
+#Split train and test as required by KNN classsification model
 train_idx <- trainTestSplit(adult1,trainPercent=75,seed=1111)
 train <- adult1[train_idx, ]
 test <- adult1[-train_idx, ]
@@ -596,4 +596,10 @@ Watch this space!
 
 Also see
 
-1. 
+1. [Design Principles of Scalable, Distributed Systems](https://gigadom.wordpress.com/2011/05/13/design-principles-of-scalable-distributed-systems/)
+2. [Re-introducing cricketr! : An R package to analyze performances of cricketers](https://gigadom.wordpress.com/2016/05/14/re-introducing-cricketr-an-r-package-to-analyze-performances-of-cricketers/)
+3.[Spicing up a IBM Bluemix cloud app with MongoDB and NodeExpress](https://gigadom.wordpress.com/2014/08/07/spicing-up-a-ibm-bluemix-cloud-app-with-mongodb-and-nodeexpress/)
+4. [Using Linear Programming (LP) for optimizing bowling change or batting lineup in T20 cricket](https://gigadom.wordpress.com/2017/09/29/using-linear-programming-lp-for-optimizing-bowling-change-or-batting-lineup/)
+5.[Simulating an Edge Shape in Android](https://gigadom.wordpress.com/2013/06/07/simulating-an-edge-shape-in-android/)
+
+To see all posts see [Index of posts](https://gigadom.wordpress.com/aa-2/)
